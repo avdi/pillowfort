@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Person",
+  "id": "https://pillowfort.land/actor/crud/",
+  "name": "Crud Bonemeal",
+  "preferredUsername": "crud",
+  "summary": "Adventurer, tourist, half-orc, beer-lover",
+  "inbox": "https://pillowfort.land/actor/crud/inbox/",
+  "outbox": "https://pillowfort.land/actor/crud/outbox/",
+  "followers": "https://pillowfort.land/actor/crud/followers/",
+  "following": "https://pillowfort.land/actor/crud/following/",
+  "liked": "https://pillowfort.land/actor/crud/liked/"
+}

@@ -1,0 +1,20 @@
+Options -Indexes
+
+AddType application/jrd+json .jrd
+AddType "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"" .jsonld
+
+RewriteEngine On
+RewriteBase /
+
+
+RewriteCond %{QUERY_STRING} ^resource=acct:([[:alnum:]_-]{2,32})@pillowfort.land$
+RewriteRule ^\.well-known/webfinger$ /actor/%1/webfinger.jrd [L]
+
+RewriteCond %{QUERY_STRING} !^resource=acct:([[:alnum:]_-]{2,32})@pillowfort.land$
+RewriteRule ^\.well-known/webfinger$ - [R=400]
+
+RewriteCond %{HTTP:Accept} application/ld\+json;\s*profile="https://www.w3.org/ns/activitystreams" [NC]
+RewriteRule (.*)/$ $1/index.jsonld [L]
+
+RewriteCond %{HTTP:Accept} application/activity\+json [NC]
+RewriteRule (.*)/$ $1/index.jsonld [L]

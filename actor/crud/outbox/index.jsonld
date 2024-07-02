@@ -1,0 +1,15 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "summary": "Crud's Pillowfort",
+  "type": "OrderedCollection",
+  "totalItems": 1,
+  "orderedItems": [
+    {
+      "type": "Note",
+      "name": "Greetings!",
+      "content": "Hail, adventurers! Grab a mug of ale and enjoy Crud's humble pillow fort!",
+      "published": "2024-06-30T07:28:57Z",
+      "updated": "2024-06-30T07:30:08Z"
+    }
+  ]
+}

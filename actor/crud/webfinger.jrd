@@ -1,0 +1,19 @@
+{
+  "subject": "acct:crud@pillowfort.land",
+  "aliases": [
+    "https://pillowfort.land/actor/crud/",
+    "https://pillowfort.land/@crud"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://pillowfort.land/@crud"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://pillowfort.land/actor/crud/"
+    }
+  ]
+}
